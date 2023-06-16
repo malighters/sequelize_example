@@ -1,0 +1,32 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "table-setup": "sequelize db:migrate",
+    "table-delete": "sequelize db:migrate:undo",
+    "data-setup": "sequelize db:seed",
+    "data-delete": "sequelize db:seed:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "sequelize": "^6.32.0",
+    "tedious": "^16.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.1",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}

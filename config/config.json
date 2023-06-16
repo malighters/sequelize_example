@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "test1",
+    "password": "test1test1",
+    "database": "DOGHOUSE",
+    "host": "localhost",
+    "port": 1433,
+    "dialect": "mssql",
+    "options": {
+      "instanceName": "DESKTOP\\SQLEXPRESS"
+    }
+  },
+  "test": {
+    "username": "",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  },
+  "production": {
+    "username": "",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mssql"
+  }
+}
