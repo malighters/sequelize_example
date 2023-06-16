@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import Dog from "../models/dog.model";
 
 const findAll = async (req: Request, res: Response) => {
-  const page = req.query.page !== undefined && typeof req.query.page === 'string' ?  parseInt(req.query.page, 10) : 1;
+  const page = req.query.pageNumber !== undefined && typeof req.query.page === 'string' ?  parseInt(req.query.page, 10) : 1;
   const limit = Number(req.query.limit) | 10;
   const skip = (page - 1) * limit;
 
