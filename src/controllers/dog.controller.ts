@@ -50,8 +50,8 @@ const create = async (req: Request, res: Response) => {
   const dog = await Dog.create({
     name: body.name,
     color: body.color,
-    tail_length: body.tail_length,
-    weight: body.weight
+    tail_length: +body.tail_length,
+    weight: +body.weight
   })
 
   return res.status(201).json(dog);
